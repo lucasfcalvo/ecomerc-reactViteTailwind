@@ -9,6 +9,7 @@ import {
 } from "../";
 import { NavBar } from "../../components/NavBar";
 import '../../index.css';
+import { ShoppingCartProvider } from '../../context/Context';
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -24,10 +25,14 @@ const AppRoutes = () => {
 export const App = () => {
 
   return (
-    <BrowserRouter >
-      <NavBar />
-      <AppRoutes />
-    </BrowserRouter>
+    <ShoppingCartProvider>
+      <BrowserRouter >
+        <NavBar />
+        <AppRoutes />
+      </BrowserRouter>
+    </ShoppingCartProvider>
+
+
   )
 }
 
