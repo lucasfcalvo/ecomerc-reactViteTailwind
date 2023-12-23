@@ -7,11 +7,12 @@ import {
   SignIn,
   NotFound
 } from "../";
+import { NavBar } from "../../components/NavBar";
 import '../../index.css';
 
 const AppRoutes = () => {
   let routes = useRoutes([
-    { path: '/', element: <Home /> },
+    { path: '/', element: <Home/> },
     { path: '/my-account', element: <MyAccount /> },
     { path: '/my-order', element: <MyOrder /> },
     { path: '/my-orders', element: <MyOrders /> },
@@ -23,8 +24,9 @@ const AppRoutes = () => {
 export const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <AppRoutes />
+      <NavBar/>
     </BrowserRouter>
   )
 }
