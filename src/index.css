@@ -11,3 +11,9 @@ html{
    height: calc(100vh - 55px);
    top: 55px;
 }
+
+.checkout-side-menu{
+    width: 330px; 
+    height: calc(100vh - 55px);
+    top: 55px;
+}

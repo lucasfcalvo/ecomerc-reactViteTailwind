@@ -10,6 +10,7 @@ import {
 import { NavBar } from "../../components/NavBar";
 import '../../index.css';
 import { ShoppingCartProvider } from '../../context/Context';
+import { CheckoutSideMenu } from '../../components/CheckoutSideMenu';
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -27,8 +28,9 @@ export const App = () => {
   return (
     <ShoppingCartProvider>
       <BrowserRouter >
-        <NavBar />
         <AppRoutes />
+        <NavBar />
+        <CheckoutSideMenu />
       </BrowserRouter>
     </ShoppingCartProvider>
 
