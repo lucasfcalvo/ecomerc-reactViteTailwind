@@ -5,3 +5,9 @@
 html{
     background-color: darkgrey;
 }
+
+.product-detail{
+   width: 330px; 
+   height: calc(100vh - 55px);
+   top: 55px;
+}
